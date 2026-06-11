@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Факторы роста — 2026 | IV межрегиональная научно-практическая конференция</title>
+<meta name="description" content="IV межрегиональная научно-практическая конференция «Факторы роста». 16 июня 2026 года, г. Пушкин. Гибридный формат.">
+<style>
+  :root{
+    /* Фирменная палитра rost-vbudushee-ru */
+    --sky:#04B0EA;
+    --steel:#3788C7;
+    --sea:#31C2A7;
+    --turquoise:#42E3B4;
+    --aqua:#56E49F;
+    --royal:#5771CC;
+    --slate:#333F48;
+    --black:#1B1B1B;
+    --gray:#ABB1BA;
+    --lavender:#E7E9EB;
+    --smoke:#F6F6F6;
+    --orange:#FFBC10;
+    --gold:#FFD633;
+    --grad:linear-gradient(120deg,#04B0EA 0%,#31C2A7 55%,#56E49F 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;color:var(--slate);background:#fff;line-height:1.6;}
+  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+  h1,h2,h3,h4{line-height:1.25;color:var(--slate);}
+
+  /* ===== НАВИГАЦИЯ ===== */
+  nav{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);z-index:100;box-shadow:0 2px 14px rgba(51,63,72,.12);}
+  nav .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px 20px;}
+  nav .logo{font-weight:800;font-size:1.15em;color:var(--slate);}
+  nav .logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  nav ul{display:flex;list-style:none;gap:22px;flex-wrap:wrap;}
+  nav a{color:var(--slate);text-decoration:none;font-size:.95em;font-weight:600;}
+  nav a:hover{color:var(--sky);}
+
+  /* ===== HERO ===== */
+  header{background:var(--grad);color:#fff;padding:95px 0 75px;text-align:center;position:relative;overflow:hidden;}
+  header::after{content:"IV";position:absolute;right:-20px;top:-70px;font-size:22em;font-weight:800;color:rgba(255,255,255,.08);line-height:1;pointer-events:none;}
+  .hero-badge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.45);border-radius:30px;padding:7px 22px;font-size:.9em;margin-bottom:24px;letter-spacing:.5px;}
+  header h1{font-size:3.3em;margin-bottom:14px;color:#fff;font-weight:800;}
+  header h1 span{color:var(--gold);}
+  header .subtitle{font-size:1.25em;max-width:760px;margin:0 auto 36px;color:rgba(255,255,255,.92);}
+  .hero-facts{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:40px;}
+  .hero-facts div{background:rgba(255,255,255,.16);border-radius:14px;padding:14px 26px;}
+  .hero-facts strong{display:block;font-size:1.15em;}
+  .hero-facts small{color:rgba(255,255,255,.85);}
+  .btn{display:inline-block;padding:15px 38px;border-radius:40px;font-weight:700;text-decoration:none;font-size:1.05em;transition:transform .15s,box-shadow .15s;margin:6px;}
+  .btn-accent{background:var(--orange);color:var(--black);}
+  .btn-outline{border:2px solid #fff;color:#fff;}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(27,27,27,.25);}
+
+  /* ===== СЕКЦИИ ===== */
+  section{padding:70px 0;}
+  section:nth-of-type(even){background:var(--smoke);}
+  h2{font-size:2.1em;text-align:center;margin-bottom:10px;}
+  h2 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .section-sub{text-align:center;color:var(--gray);max-width:720px;margin:0 auto 44px;font-size:1.05em;}
+
+  /* О конференции */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+  .about-grid p{margin-bottom:16px;}
+  .goal-box{background:var(--grad);color:#fff;border-radius:18px;padding:32px;}
+  .goal-box h3{color:var(--gold);margin-bottom:12px;font-size:1.3em;}
+
+  /* Исследовательские вопросы */
+  .q-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;}
+  .q-card{background:#fff;border-left:5px solid var(--turquoise);border-radius:12px;padding:22px 24px;box-shadow:0 3px 14px rgba(51,63,72,.10);}
+  .q-card .num{font-weight:800;color:var(--sky);font-size:1.6em;display:block;margin-bottom:6px;}
+
+  /* Когда и где */
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;}
+  .info-card{background:#fff;border-radius:16px;padding:28px;text-align:center;box-shadow:0 3px 14px rgba(51,63,72,.10);border-top:4px solid var(--sea);}
+  .info-card .icon{font-size:2.2em;margin-bottom:10px;}
+  .info-card h3{margin-bottom:8px;font-size:1.1em;}
+  .info-card a{color:var(--steel);word-break:break-all;}
+
+  /* Программа */
+  .timeline{max-width:880px;margin:0 auto;}
+  .t-item{display:grid;grid-template-columns:140px 1fr;gap:24px;margin-bottom:26px;}
+  .t-time{font-weight:700;color:var(--sky);padding-top:22px;text-align:right;}
+  .t-body{background:#fff;border-radius:16px;padding:22px 26px;box-shadow:0 3px 14px rgba(51,63,72,.10);border-top:4px solid var(--turquoise);}
+  .t-body h3{margin-bottom:10px;font-size:1.15em;}
+  .t-body ul{margin:8px 0 0 20px;}
+  .t-body li{margin-bottom:10px;}
+  .t-body .speaker{font-weight:bold;}
+  .t-body .role{color:var(--gray);font-size:.92em;}
+  .t-body .place{display:inline-block;background:var(--lavender);color:var(--slate);border-radius:20px;padding:2px 12px;font-size:.85em;margin-top:4px;}
+  .t-body em.topic{color:var(--steel);}
+
+  /* Организаторы */
+  .org-list{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+  .org-list div{background:#fff;border:2px solid var(--sea);border-radius:14px;padding:18px 28px;font-weight:600;}
+
+  /* CTA */
+  .cta{background:var(--grad);color:#fff;text-align:center;}
+  .cta h2{color:#fff;}
+  .cta p{max-width:640px;margin:0 auto 30px;color:rgba(255,255,255,.92);}
+
+  /* Футер */
+  footer{background:var(--slate);color:var(--gray);padding:36px 0;text-align:center;font-size:.92em;}
+  footer a{color:var(--turquoise);}
+
+  /* Кнопка "наверх" */
+  #toTop{position:fixed;bottom:24px;right:24px;width:48px;height:48px;border-radius:50%;background:var(--grad);color:#fff;border:none;font-size:1.3em;cursor:pointer;display:none;box-shadow:0 4px 14px rgba(51,63,72,.3);z-index:99;}
+
+  @media(max-width:760px){
+    header h1{font-size:2.2em;}
+    .about-grid{grid-template-columns:1fr;}
+    .t-item{grid-template-columns:1fr;gap:6px;}
+    .t-time{text-align:left;padding-top:0;}
+    nav ul{gap:14px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="logo">Факторы роста <span>2026</span></div>
+    <ul>
+      <li><a href="#about">О конференции</a></li>
+      <li><a href="#info">Когда и где</a></li>
+      <li><a href="#program">Программа</a></li>
+      <li><a href="#orgs">Организаторы</a></li>
+      <li><a href="#online">Онлайн</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="hero-badge">IV межрегиональная научно-практическая конференция</div>
+    <h1>Факторы <span>роста</span> — 2026</h1>
+    <p class="subtitle">Итоги четвёртого года всероссийского проекта «Мастерские роста»: создаём развивающую среду для благополучия детей и взрослых</p>
+    <div class="hero-facts">
+      <div><strong>16 июня 2026</strong><small>10:00 – 17:00</small></div>
+      <div><strong>г. Пушкин</strong><small>ГБОУ лицей № 410</small></div>
+      <div><strong>Гибридный формат</strong><small>очно и онлайн</small></div>
+    </div>
+    <a href="#program" class="btn btn-accent">Смотреть программу</a>
+    <a href="https://vkvideo.ru/video1889862_456239151" class="btn btn-outline" target="_blank" rel="noopener">Подключиться онлайн</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h2>О <span>конференции</span></h2>
+    <p class="section-sub">Педагогические технологии и возможности сообщества, объединившегося вокруг идеи развивающей среды</p>
+    <div class="about-grid">
+      <div>
+        <p>16 июня 2026 года АНПО «Школьная лига», Благотворительный фонд «Вклад в будущее» и Санкт-Петербургский государственный университет проведут IV межрегиональную научно-практическую конференцию «Факторы роста».</p>
+        <p>Конференция посвящена популяризации итогов четвёртого года всероссийского инновационного образовательного проекта по развитию личностного потенциала всех участников образовательного процесса «Мастерские роста».</p>
+        <p>В 2025 году в конференции приняло участие более 250 человек из 45 образовательных учреждений, представляющих более 40 регионов страны.</p>
+      </div>
+      <div class="goal-box">
+        <h3>Цель конференции</h3>
+        <p>На основании анализа опыта реализации проекта «Мастерские роста» выявить тенденции в создании личностно-развивающей образовательной среды и определить перспективы развития личностного потенциала всех участников образовательного процесса в контексте персонализированного обучения и цифровой трансформации.</p>
+      </div>
+    </div>
+  </div>
+</section>
